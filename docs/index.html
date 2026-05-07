@@ -20,24 +20,25 @@
             </button>
             <nav>
                 <ul>
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#education">Formação</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="#home" data-i18n="nav-home">Início</a></li>
+                    <li><a href="#about" data-i18n="nav-about">Sobre</a></li>
+                    <li><a href="#skills" data-i18n="nav-skills">Habilidades</a></li>
+                    <li><a href="#projects" data-i18n="nav-projects">Projetos</a></li>
+                    <li><a href="#education" data-i18n="nav-edu">Formação</a></li>
+                    <li><a href="#contact" data-i18n="nav-contact">Contato</a></li>
                 </ul>
             </nav>
+            <button id="lang-toggle" class="lang-btn">EN</button>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container hero-content">
-            <h1>Estudante de Desenvolvimento de Software Multiplataforma na FATEC Jacareí</h1>
+            <h1 data-i18n="hero-title">Estudante de Desenvolvimento de Software Multiplataforma na FATEC Jacareí</h1>
             <div class="hero-btns">
-                <a href="#projects" class="btn">Ver Projetos</a>
-                <a href="#contact" class="btn btn-outline">Entrar em Contato</a>
+                <a href="#projects" class="btn" data-i18n="hero-btn-projects">Ver Projetos</a>
+                <a href="#contact" class="btn btn-outline" data-i18n="hero-btn-contact">Entrar em Contato</a>
             </div>
         </div>
     </section>
@@ -46,24 +47,20 @@
     <section class="about" id="about">
         <div class="container">
             <div class="section-title">
-                <h2>Sobre Mim</h2>
+                <h2 data-i18n="about-title">Sobre Mim</h2>
             </div>
             <div class="about-content">
                 <div class="about-img">
                     <img src="./assets/20250618_184209.jpg" alt="Rafael Soares">
                 </div>
                 <div class="about-text">
-                    <h3>Olá, eu sou o Rafael!</h3>
-                    <p>Sou estudante do 5º semestre de Desenvolvimento de Software Multiplataforma na FATEC Jacareí. Tenho 19 anos e estou em busca de oportunidades para aplicar meus conhecimentos em projetos reais enquanto continuo meu desenvolvimento profissional.</p>
-                    <p>Meu objetivo é me tornar um desenvolvedor full-stack completo, capaz de criar soluções robustas e escaláveis. Estou especialmente interessado em aprofundar meus conhecimentos sobre desenvolvimento de software.</p>
-                    <p>Além da programação, tenho habilidades em design gráfico e edição de vídeo, o que me permite criar interfaces atraentes e funcionais.</p>
+                    <h3 data-i18n="about-greeting">Olá, eu sou o Rafael!</h3>
+                    <p data-i18n="about-p1">Sou estudante do 6º semestre de Desenvolvimento de Software Multiplataforma na FATEC Jacareí. Tenho 20 anos e estou em busca de oportunidades para aplicar meus conhecimentos em projetos reais enquanto continuo meu desenvolvimento profissional.</p>
+                    <p data-i18n="about-p2">Meu objetivo é me tornar um desenvolvedor full-stack completo, capaz de criar soluções robustas e escaláveis. Estou especialmente interessado em aprofundar meus conhecimentos sobre desenvolvimento de software.</p>
+                    <p data-i18n="about-p3">Além da programação, tenho habilidades em design gráfico e edição de vídeo, o que me permite criar interfaces atraentes e funcionais.</p>
                     <div class="about-info">
-                        <p><strong>Nome:</strong> Rafael Soares de Moraes</p>
-                        <p><strong>E-mail:</strong> rafaelsoaresdm1408@gmail.com</p>
-                        <p><strong>Telefone:</strong> (12) 99704-0814</p>
-                        <p><strong>Localização:</strong> Jacareí, São Paulo</p>
                     </div>
-                    <a href="#contact" class="btn">Contate-me</a>
+                    <a href="#contact" class="btn" data-i18n="about-btn">Contate-me</a>
                 </div>
             </div>
         </div>
@@ -73,50 +70,51 @@
     <section class="skills" id="skills">
         <div class="container">
             <div class="section-title">
-                <h2>Minhas Habilidades</h2>
+                <h2 data-i18n="skills-title">Minhas Habilidades</h2>
             </div>
             <div class="skills-container">
                 <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Desenvolvimento Front-end</h3>
+                    <h3 data-i18n="skills-cat1"><i class="fas fa-code"></i> Front-end & Mobile</h3>
                     <ul class="skills-list">
                         <li>HTML5 & CSS3</li>
-                        <li>JavaScript</li>
-                        <li>TypeScript</li>
-                        <li>React.js</li>
-                        <li>Material UI</li>
+                        <li>JavaScript & TypeScript</li>
+                        <li>React.js & React Native</li>
+                        <li>Material UI & Expo</li>
                         <li>Responsive Design</li>
                     </ul>
                 </div>
                 
                 <div class="skill-category">
-                    <h3><i class="fas fa-server"></i> Desenvolvimento Back-end</h3>
+                    <h3 data-i18n="skills-cat2"><i class="fas fa-server"></i> Back-end & IA</h3>
                     <ul class="skills-list">
-                        <li>Node.js</li>
-                        <li>Express.js</li>
-                        <li>MongoDB</li>
-                        <li>PostgreSQL</li>
+                        <li>Node.js & Express.js</li>
+                        <li>SQL (PostgreSQL)</li>
+                        <li>NoSQL (MongoDB)</li>
+                        <li>Deep Learning (Keras/TensorFlow)</li>
+                        <li>NLP / Chatbots</li>
                     </ul>
                 </div>
                 
                 <div class="skill-category">
-                    <h3><i class="fas fa-paint-brush"></i> Design & Multimídia</h3>
+                    <h3 data-i18n="skills-cat3"><i class="fas fa-tools"></i> Ferramentas & Idiomas</h3>
                     <ul class="skills-list">
-                        <li>Design Gráfico</li>
+                        <li>Git & GitHub</li>
+                        <li>Arduino IDE</li>
+                        <li>Figma / UI Design</li>
                         <li>Edição de Vídeo</li>
-                        <li>UI/UX Design</li>
-                        <li>Figma</li>
+                        <li><strong data-i18n="skills-lang">Inglês (Avançado)</strong></li>
                     </ul>
                 </div>
                 
                 <div class="skill-category">
-                    <h3><i class="fas fa-user-friends"></i> Soft Skills</h3>
+                    <h3 data-i18n="skills-cat4"><i class="fas fa-user-friends"></i> Soft Skills</h3>
                     <ul class="skills-list">
-                        <li>Trabalho em Equipe</li>
-                        <li>Scrum</li>
-                        <li>Organização</li>
-                        <li>Criatividade</li>
-                        <li>Resolução de Problemas</li>
-                        <li>Raciocínio Matemático</li>
+                        <li data-i18n="ss1">Trabalho em Equipe</li>
+                        <li data-i18n="ss2">Metodologia Ágil (Scrum)</li>
+                        <li data-i18n="ss3">Perfil Analítico</li>
+                        <li data-i18n="ss4">Organização & Detalhes</li>
+                        <li data-i18n="ss5">Resolução de Problemas</li>
+                        <li data-i18n="ss6">Raciocínio Matemático</li>
                     </ul>
                 </div>
             </div>
@@ -127,7 +125,7 @@
     <section class="projects" id="projects">
         <div class="container">
             <div class="section-title">
-                <h2>Meus Projetos</h2>
+                <h2 data-i18n="projects-title">Meus Projetos</h2>
             </div>
             <div class="projects-grid">
                 <!-- Project 1 -->
@@ -136,15 +134,14 @@
                         <img src="./assets/Imagem do WhatsApp de 2025-06-18 à(s) 19.01.44_5209cbf4.jpg" alt="Visiona Dashboard">
                     </div>
                     <div class="project-content">
-                        <h3>Visiona Dashboard</h3>
-                        <p>Aplicativo web desenvolvido em equipe para atender às necessidades do cliente Visiona.</p>
+                        <h3 data-i18n="p1-title">Visiona Dashboard</h3>
+                        <p data-i18n="p1-desc">Web App para Geomapeamento Interativo: Integração de APIs de mapas para transformar dados brutos em visualizações espaciais.</p>
                         <div class="tech-stack">
                             <span class="tech-item">React</span>
                             <span class="tech-item">PostgreSQL</span>
-                            <span class="tech-item">CSS3</span>
                             <span class="tech-item">JavaScript</span>
                         </div>
-                        <a href="https://github.com/candago/ABP-2-Semestre-Documentacao" class="btn" target="_blank">Ver Detalhes</a>
+                        <a href="https://github.com/candago/ABP-2-Semestre-Documentacao" class="btn" target="_blank" data-i18n="project-btn">Ver Detalhes</a>
                     </div>
                 </div>
                 
@@ -154,18 +151,17 @@
                         <img src="./assets/sem 3.png" alt="GEJUP">
                     </div>
                     <div class="project-content">
-                        <h3>GejUp</h3>
-                        <p>Plataforma para controle de consumo de água e nutrientes desenvolvida em equipe para o projeto GEJUP.</p>
+                        <h3 data-i18n="p2-title">GejUp (Saúde)</h3>
+                        <p data-i18n="p2-desc">Web App para Saúde (Dieta e Hidratação): Sistema focado em usabilidade para registro de macronutrientes e metas hídricas.</p>
                         <div class="tech-stack">
                             <span class="tech-item">React</span>
                             <span class="tech-item">TypeScript</span>
                             <span class="tech-item">MongoDB</span>
                             <span class="tech-item">Material UI</span>
                         </div>
-                        <a href="https://github.com/RafaelSM21/abp_3_semestre_documentacao"  class="btn" target="_blank">Ver Detalhes</a>
+                        <a href="https://github.com/RafaelSM21/abp_3_semestre_documentacao"  class="btn" target="_blank" data-i18n="project-btn">Ver Detalhes</a>
                     </div>
                 </div>
-                
                 
                 <!-- Project 3 -->
                 <div class="project-card">
@@ -173,14 +169,48 @@
                         <img src="./assets/Imagem do WhatsApp de 2025-06-18 à(s) 18.56.25_6a223419.jpg" alt="Lynch Area">
                     </div>
                     <div class="project-content">
-                        <h3>Lynch Area</h3>
-                        <p>Aplicativo mobile para receber localização de boias.</p>
+                        <h3 data-i18n="p3-title">Rastreamento Oceanográfico</h3>
+                        <p data-i18n="p3-desc">Plataforma colaborativa com autenticação segura, voltada ao monitoramento de dados ambientais e trajetórias marítimas.</p>
                         <div class="tech-stack">
                             <span class="tech-item">React</span>
                             <span class="tech-item">PostgreSQL</span>
                             <span class="tech-item">Arduino IDE</span>
                         </div>
-                        <a href="https://github.com/candago-4/documentacao" class="btn" target="_blank">Ver Detalhes</a>
+                        <a href="https://github.com/candago-4/documentacao" class="btn" target="_blank" data-i18n="project-btn">Ver Detalhes</a>
+                    </div>
+                </div>
+
+                <!-- Project 4: DogSpotter -->
+                <div class="project-card mobile-project">
+                    <div class="project-img">
+                        <img src="./assets/IMG-20251126-WA0027.jpg" alt="DogSpotter">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="p4-title">DogSpotter (Mobile)</h3>
+                        <p data-i18n="p4-desc">Aplicativo mobile para registro e rastreamento de animais, com integração de câmera, mapas e gerenciamento de estado global.</p>
+                        <div class="tech-stack">
+                            <span class="tech-item">React Native</span>
+                            <span class="tech-item">Expo</span>
+                            <span class="tech-item">TypeScript</span>
+                        </div>
+                        <a href="https://github.com/candago-5/frontend" class="btn" target="_blank" data-i18n="project-btn">Ver Detalhes</a>
+                    </div>
+                </div>
+
+                <!-- Project 5: Procon Assistant -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://img.freepik.com/vetores-gratis/chatbot-mensagem-vectorart_78370-4104.jpg?semt=ais_hybrid&w=740&q=80" alt="Chatbot Procon">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="p5-title">Chatbot PROCON Jacareí</h3>
+                        <p data-i18n="p5-desc">Automação da triagem de reclamações e dúvidas frequentes, otimizando o fluxo de atendimento da prefeitura via NLP.</p>
+                        <div class="tech-stack">
+                            <span class="tech-item">NLP</span>
+                            <span class="tech-item">Machine Learning</span>
+                            <span class="tech-item">JSON</span>
+                        </div>
+                        <a href="https://github.com/candago-6/documentacao" class="btn" target="_blank" data-i18n="project-btn">Ver Detalhes</a>
                     </div>
                 </div>
             </div>
@@ -191,22 +221,22 @@
     <section class="education" id="education">
         <div class="container">
             <div class="section-title">
-                <h2>Formação Acadêmica</h2>
+                <h2 data-i18n="edu-title">Formação Acadêmica</h2>
             </div>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>Desenvolvimento de Software Multiplataforma</h3>
-                        <span class="date">ago/2023 - jul/2026(previsão)</span>
+                        <h3 data-i18n="edu-c1-title">Desenvolvimento de Software Multiplataforma</h3>
+                        <span class="date" data-i18n="edu-c1-date">ago/2023 - jul/2026(previsão)</span>
                         <p>FATEC Jacareí - Faculdade de Tecnologia de Jacareí</p>
-                        <p>Curso focado no desenvolvimento de aplicações para diversas plataformas, com ênfase em práticas modernas de desenvolvimento de software.</p>
+                        <p data-i18n="edu-c1-desc">Curso focado no desenvolvimento de aplicações para diversas plataformas, com ênfase em práticas modernas de desenvolvimento de software.</p>
                     </div>
                 </div>
                 
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>Ensino Médio Completo</h3>
-                        <span class="date">Concluído em 2022</span>
+                        <h3 data-i18n="edu-c2-title">Ensino Médio Completo</h3>
+                        <span class="date" data-i18n="edu-c2-date">Concluído em 2022</span>
                         <p>Instituto Educacional Caminhar (INEC)</p>
                     </div>
                 </div>
@@ -218,75 +248,43 @@
     <section class="contact" id="contact">
         <div class="container">
             <div class="section-title">
-                <h2>Entre em Contato</h2>
+                <h2 data-i18n="contact-title">Entre em Contato</h2>
             </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Localização</h3>
-                            <p>Jacareí, São Paulo, Brasil</p>
-                        </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
                     </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Email</h3>
-                            <p>rafaelsoaresdm1408@gmail.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Telefone</h3>
-                            <p>(12) 99704-0814</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>GitHub</h3>
-                            <p><a href="https://github.com/RafaelSM21" target="_blank">github.com/RafaelSM21</a></p>
-                        </div>
-                    </div>
+                    <h3>Email</h3>
+                    <p>rafaelsoaresdm1408@gmail.com</p>
+                    <a href="mailto:rafaelsoaresdm1408@gmail.com" class="contact-link" data-i18n="contact-email-btn">Enviar E-mail</a>
                 </div>
                 
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Nome Completo</label>
-                            <input type="text" id="name" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subject">Assunto</label>
-                            <input type="text" id="subject" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Mensagem</label>
-                            <textarea id="message" class="form-control" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn">Enviar Mensagem</button>
-                    </form>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>Rafael Soares de Moraes</p>
+                    <a href="https://www.linkedin.com/in/rafaelsoaresdemoraes/" target="_blank" class="contact-link" data-i18n="contact-li-btn">Ver Perfil</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>RafaelSM21</p>
+                    <a href="https://github.com/RafaelSM21" target="_blank" class="contact-link" data-i18n="contact-gh-btn">Ver Repositórios</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Telefone</h3>
+                    <p>(12) 99704-0814</p>
+                    <a href="https://wa.me/5512997040814" target="_blank" class="contact-link">WhatsApp</a>
                 </div>
             </div>
         </div>
@@ -297,34 +295,26 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-about">
-                    <h3 class="footer-title">Sobre Mim</h3>
-                    <p>Estudante de Desenvolvimento de Software Multiplataforma na FATEC Jacareí, com habilidades em desenvolvimento web, design gráfico e trabalho em equipe. Buscando oportunidades para aplicar meus conhecimentos e crescer profissionalmente.</p>
+                    <h3 class="footer-title" data-i18n="footer-about-title">Sobre Mim</h3>
+                    <p data-i18n="footer-about-p">Estudante de Desenvolvimento de Software Multiplataforma na FATEC Jacareí, com habilidades em desenvolvimento web, design gráfico e trabalho em equipe. Buscando oportunidades para aplicar meus conhecimentos e crescer profissionalmente.</p>
                 </div>
                 
                 <div class="footer-links">
-                    <h3 class="footer-title">Links Rápidos</h3>
+                    <h3 class="footer-title" data-i18n="footer-links-title">Links Rápidos</h3>
                     <ul>
-                        <li><a href="#home">Início</a></li>
-                        <li><a href="#about">Sobre</a></li>
-                        <li><a href="#skills">Habilidades</a></li>
-                        <li><a href="#projects">Projetos</a></li>
-                        <li><a href="#education">Formação</a></li>
-                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="#home" data-i18n="nav-home">Início</a></li>
+                        <li><a href="#about" data-i18n="nav-about">Sobre</a></li>
+                        <li><a href="#skills" data-i18n="nav-skills">Habilidades</a></li>
+                        <li><a href="#projects" data-i18n="nav-projects">Projetos</a></li>
+                        <li><a href="#education" data-i18n="nav-edu">Formação</a></li>
+                        <li><a href="#contact" data-i18n="nav-contact">Contato</a></li>
                     </ul>
-                </div>
-                
-                <div class="footer-social">
-                    <h3 class="footer-title">Conecte-se</h3>
-                    <div class="social-icons">
-                        <a href="https://github.com/RafaelSM21" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/rafaelsoaresdemoraes/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
                 </div>
             </div>
             
             <div class="copyright">
-                <p>&copy; 2023 Rafael Soares. Todos os direitos reservados.</p>
-                <p>Este portfólio segue as diretrizes da FATEC Jacareí para o curso de Desenvolvimento de Software Multiplataforma.</p>
+                <p>&copy; 2023 Rafael Soares. <span data-i18n="footer-copy">Todos os direitos reservados.</span></p>
+                <p data-i18n="footer-disclaimer">Este portfólio segue as diretrizes da FATEC Jacareí para o curso de Desenvolvimento de Software Multiplataforma.</p>
             </div>
         </div>
 
