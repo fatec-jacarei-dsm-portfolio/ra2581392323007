@@ -11,4 +11,4 @@
 ---
 
 **Vídeo de Apresentação**
-🎤 6DSM - [Vídeo](https://youtu.be/fNzffRHHvVE?si=U3xPggfwBhST2MjE)
+🎤 6DSM - [Vídeo]((https://www.youtube.com/watch?is=fvs2cKp3JkHoZB1S&v=UQyTCSTrAzA&feature=youtu.be))
